@@ -1,0 +1,35 @@
+/* ボタン設定 */
+.c-button {
+    &--blue {
+        display: block;
+        border: 0;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        color: #ffffff;
+        background-color: #5dc1cf;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    &__instagram {
+        display: block;
+        border: solid 2px #5dc1cf;
+        background-color: #ffffff;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    &__staff {
+        display: block;
+        border: solid 1px #323232;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        background-color: #ffffff;
+        font-family: 'Noto Sans JP', sans-serif;
+
+    }
+}

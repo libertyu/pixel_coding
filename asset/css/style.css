@@ -1,0 +1,981 @@
+@charset "UTF-8";
+/***************************************************************************************
+*  foundation設定
+***************************************************************************************/
+/*****************************************************************************
+ *  リセットCSS　
+ ****************************************************************************/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/*****************************************************************************
+ *  個人初期設定CSS　
+ ****************************************************************************/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #323232;
+  background: #ffffff;
+  line-height: 1;
+  font-family: "Noto Sans JP", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+/***************************x************************************************************
+*  layout設定
+***************************************************************************************/
+/*****************************************************************************
+ *  footer設定
+ ****************************************************************************/
+#l-footer {
+  max-width: 1100px;
+  min-width: 375px;
+  margin: 0 auto;
+}
+
+/*****************************************************************************
+ *  header設定
+ ****************************************************************************/
+#l-header {
+  max-width: 1100px;
+  min-width: 375px;
+  margin: 0 auto;
+}
+
+/*****************************************************************************
+ *  main設定
+ ****************************************************************************/
+#l-main {
+  max-width: 1100px;
+  min-width: 375px;
+  margin: 0 auto;
+}
+
+/***************************************************************************************
+*  object-component設定
+***************************************************************************************/
+.c-grid--small {
+  max-width: 730px;
+  min-width: 343px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.c-grid--big {
+  max-width: 1100px;
+  min-width: 375px;
+  margin: 0 auto;
+}
+
+/* ボタン設定 */
+.c-button--blue {
+  display: block;
+  border: 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  color: #ffffff;
+  background-color: #5dc1cf;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.c-button__instagram {
+  display: block;
+  border: solid 2px #5dc1cf;
+  background-color: #ffffff;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.c-button__staff {
+  display: block;
+  border: solid 1px #323232;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  background-color: #ffffff;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/***************************************************************************************
+*  object-project設定
+***************************************************************************************/
+/* p-top css */
+.p-top {
+  height: 600px;
+  background-image: url("./../images/header_pc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@media (max-width: 550px) {
+  .p-top {
+    background-image: url("./../images/header_sp.jpg");
+  }
+}
+
+.p-top__logo {
+  width: 27%;
+  min-width: 160px;
+  height: auto;
+  position: absolute;
+  top: 25px;
+  left: 26px;
+}
+
+@media (max-width: 750px) {
+  .p-top__logo {
+    top: 20px;
+    left: 19px;
+  }
+}
+
+@media (max-width: 550px) {
+  .p-top__logo {
+    top: 15px;
+    left: 12px;
+  }
+}
+
+.p-top__logo img {
+  widows: 100%;
+  height: auto;
+}
+
+.p-top__eyecatch {
+  position: absolute;
+  top: 409px;
+  left: 15px;
+}
+
+.p-top nav {
+  display: none;
+}
+
+.toggle_btn {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+
+.toggle_btn span {
+  display: block;
+  position: absolute;
+  left: 19px;
+  width: 22px;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.toggle_btn span:nth-child(1) {
+  top: 22px;
+}
+
+.toggle_btn span:nth-child(2) {
+  top: 30px;
+}
+
+.toggle_btn span:nth-child(3) {
+  bottom: 20px;
+}
+
+/* p-reservation css */
+.p-reservation button {
+  width: 100%;
+  height: 48px;
+  font-size: 1.8rem;
+}
+
+.p-reservation__info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.p-reservation__info-ttl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.4rem;
+}
+
+.p-reservation__info-ttl::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 14px;
+  margin-right: 4px;
+  background-color: #323232;
+}
+
+.p-reservation__tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.p-reservation__tel--icon {
+  width: 12px;
+  height: 12px;
+  margin: 2px 1px 0 0;
+}
+
+.p-reservation__date {
+  width: 100%;
+  height: 82px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.p-reservation__date th {
+  height: 39px;
+  line-height: 1.4;
+  border: solid 1px #dddddd;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+.p-reservation__date td {
+  height: 40px;
+  border: solid 1px #dddddd;
+  font-size: 1.6rem;
+  vertical-align: middle;
+}
+
+.p-hairStyle__ttl {
+  font-size: 3.4rem;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.p-hairStyle__ttl span {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 3px;
+  letter-spacing: 0;
+}
+
+.p-hairStyle__img {
+  max-width: 730px;
+  min-width: 375px;
+  margin: 20px auto 0;
+}
+
+.p-hairStyle__img img {
+  width: 100%;
+  height: auto;
+}
+
+.p-hairStyle__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.p-hairStyle__list-item {
+  font-size: 1.2rem;
+  color: #848484;
+  border: solid 1px #f0f0f0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  margin: 0 8px 7px 0;
+  padding: 5px 7px;
+}
+
+.p-hairStyle__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 343px;
+  height: 48px;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  padding-top: 10px;
+}
+
+.p-hairStyle__button img {
+  margin-right: 5px;
+}
+
+.p-newInfo__ttl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.4rem;
+}
+
+.p-newInfo__ttl::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 14px;
+  margin-right: 4px;
+  background-color: #323232;
+}
+
+.p-newInfo__article dt {
+  font-size: 1.3rem;
+  padding-top: 19px;
+}
+
+.p-newInfo__article dd {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  padding: 3px 0 17px 0;
+  border-bottom: solid 1px #eeeeee;
+}
+
+.p-newInfo--link {
+  text-align: right;
+}
+
+.p-newInfo--link a {
+  font-size: 1.4rem;
+  padding-right: 4px;
+  text-decoration: none;
+}
+
+.p-coupon {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+}
+
+.p-coupon__ttl {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.p-coupon__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 0;
+  border-radius: 10px;
+  background-color: #ffffff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 550px) {
+  .p-coupon__flex {
+    display: block;
+    padding: 12px 0 20px 0;
+  }
+}
+
+.p-coupon__txt {
+  width: 60%;
+  -ms-flex-negative: 7;
+      flex-shrink: 7;
+  font-size: 1.4rem;
+  margin: 13px 0 0 10px;
+  word-wrap: break-word;
+}
+
+@media (max-width: 550px) {
+  .p-coupon__txt {
+    width: 94%;
+    margin: auto;
+  }
+}
+
+.p-coupon__txt--strong {
+  display: block;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.p-coupon__txt--small {
+  line-height: 1.4;
+}
+
+.p-coupon__txt--small span {
+  font-weight: 700;
+  font-size: 1.6rem;
+  display: inline;
+}
+
+.p-coupon button {
+  margin: 22px 20px 24px 10px;
+  -ms-flex-negative: 3;
+      flex-shrink: 3;
+  width: 198px;
+  height: 32px;
+  font-size: 14px;
+}
+
+@media (max-width: 550px) {
+  .p-coupon button {
+    margin: 19px auto 0;
+  }
+}
+
+.p-coupon__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #5dc1cf;
+}
+
+.p-coupon__link li {
+  margin-left: 25px;
+}
+
+@media (max-width: 550px) {
+  .p-coupon__link li {
+    margin: -2px 0 0 25px;
+  }
+}
+
+.p-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 750px) {
+  .p-banner {
+    display: block;
+  }
+  .p-banner__haircare {
+    display: block;
+    margin: auto;
+  }
+  .p-banner__voice {
+    display: block;
+    margin: 20px auto 0;
+  }
+}
+
+.p-staff {
+  width: 343px;
+  margin: 0 auto 60px;
+}
+
+.p-staff__ttl {
+  font-size: 3.4rem;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.p-staff__ttl span {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 3px;
+  letter-spacing: 0;
+}
+
+.p-staff__area {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.p-staff__position {
+  margin: 8px 0 5px 0;
+}
+
+.p-staff__button {
+  position: relative;
+  width: 343px;
+  height: 36px;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.p-staff__button img {
+  position: absolute;
+  top: 7px;
+  right: 90px;
+}
+
+.p-footer {
+  max-width: 730px;
+  min-width: 375px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.p-footer__logo {
+  text-align: center;
+}
+
+.p-footer__logo span {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 11px;
+}
+
+.p-footer__img {
+  width: 47%;
+  min-width: 200px;
+  margin: 0 auto;
+  padding-left: 2px;
+}
+
+.p-footer__img img {
+  width: 100%;
+  height: auto;
+}
+
+.p-footer__tel {
+  margin-top: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.p-footer__tel--icon {
+  width: 12px;
+  height: 12px;
+  margin: 2px 1px 0 0;
+}
+
+.p-footer__txt {
+  text-align: center;
+  margin-top: 3px;
+  font-size: 1rem;
+}
+
+.p-footer__instagram {
+  width: 23px;
+  margin: 14px auto 0;
+}
+
+.p-footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+.p-footer__list li {
+  padding: 0 8px;
+  border-right: solid 1px #323232;
+  margin-top: 10x;
+}
+
+.p-footer__list li:last-child {
+  border-right: 0;
+}
+
+.p-footer__copyright {
+  max-width: 1100px;
+  min-width: 375px;
+  height: 51px;
+  margin: 62px auto 0;
+  text-align: center;
+  background-color: #323232;
+}
+
+@media (max-width: 550px) {
+  .p-footer__copyright {
+    margin: 50px auto 0;
+  }
+}
+
+.p-footer__copyright p {
+  padding-top: 20px;
+}
+
+.p-shopInfo {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.p-shopInfo__responsive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 550px) {
+  .p-shopInfo__responsive {
+    display: block;
+  }
+}
+
+/******************x***********************************************************
+ *  object-utility設定
+ ****************************************************************************/
+.u-marginTop--4 {
+  margin-top: 4px;
+}
+
+.u-marginTop--8 {
+  margin-top: 8px;
+}
+
+.u-marginTop--10 {
+  margin-top: 10px;
+}
+
+.u-marginTop--12 {
+  margin-top: 12px;
+}
+
+.u-marginTop--14 {
+  margin-top: 14px;
+}
+
+.u-marginTop--16 {
+  margin-top: 16px;
+}
+
+.u-marginTop--18 {
+  margin-top: 18px;
+}
+
+.u-marginTop--20 {
+  margin-top: 20px;
+}
+
+.u-marginTop--29 {
+  margin-top: 29px;
+}
+
+@media (max-width: 550px) {
+  .u-marginTop--29 {
+    margin-top: 30px;
+  }
+}
+
+.u-marginTop--30 {
+  margin-top: 30px;
+}
+
+.u-marginBottom--18 {
+  margin-bottom: 18px;
+}
+
+.u-marginBottom--21 {
+  margin-bottom: 21px;
+}
+
+.u-marginBottom--37 {
+  margin-bottom: 37px;
+}
+
+.u-marginBottom--40 {
+  margin-bottom: 40px;
+}
+
+.u-marginBottom--60 {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 550px) {
+  .u-marginBottom--60 {
+    margin-bottom: 55px;
+  }
+}
+
+.u-marginLeft {
+  margin-left: 2px;
+}
+
+.u-marginRight {
+  margin-right: 7px;
+}
+
+.u-paddingTop--40 {
+  padding-top: 40px;
+}
+
+.u-paddingBottom--4 {
+  padding-bottom: 4px;
+}
+
+.u-paddingBottom--17 {
+  padding-bottom: 17px;
+}
+
+.u-paddingBottom--32 {
+  padding-bottom: 17px;
+}
+
+.u-paddingRight--15 {
+  padding-right: 17px;
+}
+
+@media (max-width: 550px) {
+  .u-paddingBottom--8 {
+    padding-bottom: 2px;
+  }
+  .u-paddingBottom--4 {
+    padding-bottom: 1px;
+  }
+  .u-paddingBottom--32 {
+    padding-bottom: 30px;
+  }
+}
+
+.u-color--red {
+  color: #cc5777;
+}
+
+.u-color--gray {
+  color: #dddddd;
+}
+
+.u-color--gray-2 {
+  color: #999999;
+}
+
+.u-color--blue {
+  color: #5dc1cf;
+}
+
+.u-color--white {
+  color: #ffffff;
+}
+
+.u-top--10 {
+  font-size: 1rem;
+}
+
+.u-top--12 {
+  font-size: 1.2 rem;
+}
+/*# sourceMappingURL=style.css.map */
